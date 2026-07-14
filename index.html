@@ -107,7 +107,7 @@
   .pass{position:relative;background:var(--card);color:var(--ink);border-radius:14px;overflow:hidden;
     box-shadow:var(--shadow-lg);display:grid;grid-template-columns:1fr auto;}
   .pass-main{padding:16px 18px;}
-  .pass-route{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:800;font-size:1.05rem;color:var(--ink);letter-spacing:-.01em;}
+  .pass-route{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.05rem;color:var(--ink);letter-spacing:-.01em;}
   .pass-route svg{flex:none;}
   .pass-name{font-size:1.28rem;font-weight:900;letter-spacing:-.02em;margin-top:12px;color:var(--ink);}
   .pass-meta{display:flex;gap:20px;margin-top:12px;}
@@ -119,7 +119,7 @@
     border-left:2px dashed color-mix(in srgb,var(--navy) 60%, #fff 40%);}
   .pass-stub .pts{font-size:2rem;font-weight:900;line-height:1;color:#fff;}
   .pass-stub .pts-l{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#9FB0DC;margin-top:4px;font-weight:700;}
-  .seat{margin-left:auto;flex:none;font-size:.62rem;font-weight:800;letter-spacing:.1em;
+  .seat{display:inline-flex;margin:0 0 10px;font-size:.62rem;font-weight:800;letter-spacing:.1em;
     text-transform:uppercase;color:#fff;background:#5E8F1C;padding:3px 9px;border-radius:999px;white-space:nowrap;}
 
   /* ---------- section ---------- */
@@ -290,7 +290,7 @@
       <div>
         <div class="eyebrow">Campanha de Incentivos · Jul–Set 2026</div>
         <h1>Ranking <span class="go">Mendoza</span></h1>
-        <p class="hero-sub">As <b style="color:var(--hero-ink)">2 consultoras</b> com maior pontuação ao fim da campanha embarcam para Mendoza. Este é o placar da 1ª quinzena — tudo ainda em aberto.</p>
+        <p class="hero-sub">As <b style="color:var(--hero-ink)">2 consultoras</b> que mais encantarem clientes até o fim da campanha embarcam para Mendoza. Este é o retrato da 1ª quinzena — e ainda tem muita viagem pela frente.</p>
       </div>
       <div class="prize-badge">✈ 2 vagas · 100 pontos em jogo</div>
     </div>
@@ -298,9 +298,10 @@
     <div class="passes">
       <div class="pass">
         <div class="pass-main">
+          <span class="seat">Classificada agora</span>
           <div class="pass-route">GIG
             <svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><path d="M1 6h24m0 0-5-4m5 4-5 4" stroke="var(--lime-ink)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            MDZ<span class="seat">Classificada agora</span></div>
+            MDZ</div>
           <div class="pass-name">Isabela Ferreira</div>
           <div class="pass-meta">
             <div><div class="lbl">Reativação</div><div class="val num">1</div></div>
@@ -313,9 +314,10 @@
 
       <div class="pass">
         <div class="pass-main">
+          <span class="seat">Classificada agora</span>
           <div class="pass-route">GIG
             <svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><path d="M1 6h24m0 0-5-4m5 4-5 4" stroke="var(--lime-ink)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            MDZ<span class="seat">Classificada agora</span></div>
+            MDZ</div>
           <div class="pass-name">Rachel Mansano</div>
           <div class="pass-meta">
             <div><div class="lbl">Reativação</div><div class="val num">1</div></div>
@@ -332,7 +334,7 @@
   <section>
     <div class="sec-head">
       <h2>Placar completo</h2>
-      <p>Cada critério vale como % do líder daquele critério × o peso. O total é a soma dos três.</p>
+      <p>Em cada critério, quem está na frente leva o peso cheio e as demais acompanham proporcionalmente. Juntando as três frentes, chega-se ao total.</p>
     </div>
     <div class="board" id="board">
       <!-- 1 -->
@@ -431,29 +433,29 @@
   <section>
     <div class="sec-head">
       <h2>Os três critérios</h2>
-      <p>100 pontos distribuídos por peso. Quem lidera cada critério leva o peso cheio.</p>
+      <p>São 100 pontos em jogo, divididos em três frentes. Vale conhecer onde cada uma pesa mais para jogar a favor.</p>
     </div>
     <div class="grid3">
       <div class="cc r">
         <span class="wt num">35</span>
         <div class="tag">Peso 35</div>
         <h3>Reativação de clientes</h3>
-        <div class="desc">Cliente que comprou até 2025 e ainda não fechou viagem em 2026, reativado com ≥ 2 noites de hotel Klas no período.</div>
-        <div class="lead-line">Líder: <b>Isabela</b> e <b>Rachel</b> — 1 reativação cada.</div>
+        <div class="desc">Reconquistar um cliente que viajou com a gente até 2025 e ainda não voltou em 2026 — vale quando ele fecha ao menos 2 noites de hotel Klas no período.</div>
+        <div class="lead-line">Na frente: <b>Isabela</b> e <b>Rachel</b>, com 1 reativação cada.</div>
       </div>
       <div class="cc n">
         <span class="wt num">25</span>
         <div class="tag">Peso 25</div>
         <h3>Nº de vendas com experiência</h3>
-        <div class="desc">Cada venda com ao menos 1 experiência (ingresso, passeio, tour, guia) vendida no período. Teto de 1 por viagem.</div>
-        <div class="lead-line">Líder: <b>Isabela</b> — 1 venda com experiência.</div>
+        <div class="desc">Cada viagem que ganhou uma experiência — ingresso, passeio, tour, guia — vendida no período. Conta uma vez por viagem, por mais experiências que ela leve.</div>
+        <div class="lead-line">Na frente: <b>Isabela</b>, com 1 venda com experiência.</div>
       </div>
       <div class="cc p">
         <span class="wt num">40</span>
         <div class="tag">Peso 40 · maior peso</div>
         <h3>% de vendas com experiência</h3>
-        <div class="desc">Das vendas fechadas <i>inteiras</i> no período, quantas levaram experiência junto. É onde estão mais pontos.</div>
-        <div class="lead-line"><b>Ainda 0%</b> para todas — critério intocado, decide a campanha.</div>
+        <div class="desc">De todas as viagens fechadas <i>por inteiro</i> no período, quantas saíram com uma experiência junto. É aqui que a campanha se decide.</div>
+        <div class="lead-line"><b>Ainda 0%</b> para todas — o critério que ninguém abriu ainda.</div>
       </div>
     </div>
   </section>
