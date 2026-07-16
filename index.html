@@ -121,6 +121,12 @@
   .pass-stub .pts-l{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#9FB0DC;margin-top:4px;font-weight:700;}
   .seat{display:inline-flex;margin:0 0 10px;font-size:.62rem;font-weight:800;letter-spacing:.1em;
     text-transform:uppercase;color:#fff;background:#5E8F1C;padding:3px 9px;border-radius:999px;white-space:nowrap;}
+  .seat-open{color:var(--muted-2);background:transparent;border:1px dashed var(--muted-2);}
+  .pass-open{outline:1.5px dashed var(--line);outline-offset:-1.5px;}
+  .pass-invite{font-size:.82rem;color:var(--muted);line-height:1.4;margin-top:12px;max-width:34ch;}
+  .pass-stub-open{background:var(--card-2);border-left-color:var(--line);}
+  .pass-stub-open .pts{color:var(--muted-2);}
+  .pass-stub-open .pts-l{color:var(--muted-2);}
 
   /* ---------- section ---------- */
   section{margin-top:40px;}
@@ -304,28 +310,24 @@
             MDZ</div>
           <div class="pass-name">Isabela Ferreira</div>
           <div class="pass-meta">
-            <div><div class="lbl">Reativação</div><div class="val num">1</div></div>
+            <div><div class="lbl">Reativação</div><div class="val num">0</div></div>
             <div><div class="lbl">Vendas c/ exp.</div><div class="val num">1</div></div>
             <div><div class="lbl">% exp.</div><div class="val num">0%</div></div>
           </div>
         </div>
-        <div class="pass-stub"><div class="pts num">60</div><div class="pts-l">pontos</div></div>
+        <div class="pass-stub"><div class="pts num">25</div><div class="pts-l">pontos</div></div>
       </div>
 
-      <div class="pass">
+      <div class="pass pass-open">
         <div class="pass-main">
-          <span class="seat">Classificada agora</span>
+          <span class="seat seat-open">2ª vaga em aberto</span>
           <div class="pass-route">GIG
             <svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><path d="M1 6h24m0 0-5-4m5 4-5 4" stroke="var(--lime-ink)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
             MDZ</div>
-          <div class="pass-name">Rachel Mansano</div>
-          <div class="pass-meta">
-            <div><div class="lbl">Reativação</div><div class="val num">1</div></div>
-            <div><div class="lbl">Vendas c/ exp.</div><div class="val num">0</div></div>
-            <div><div class="lbl">% exp.</div><div class="val num">0%</div></div>
-          </div>
+          <div class="pass-name">Quem embarca com a Isabela?</div>
+          <div class="pass-invite">A segunda poltrona ainda está esperando. Tem muita campanha pela frente — dá tempo de sobra de garantir esse lugar.</div>
         </div>
-        <div class="pass-stub"><div class="pts num">35</div><div class="pts-l">pontos</div></div>
+        <div class="pass-stub pass-stub-open"><div class="pts num">—</div><div class="pts-l">a conquistar</div></div>
       </div>
     </div>
   </div>
@@ -341,31 +343,31 @@
       <div class="row lead">
         <div class="rank g1">1</div>
         <div class="who"><div class="nm">Isabela Ferreira<span class="qual">Mendoza</span></div>
-          <div class="meta">1 reativação · 1 venda com experiência · 4 vendas no período · 0% de vendas com experiência</div></div>
+          <div class="meta">0 reativações · 1 venda com experiência · 4 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
-          <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:100%"></i></div></div>
+          <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:100%"></i></div></div>
           <div class="crit"><span class="dot p"></span><div class="bar p"><i style="--w:0%"></i></div></div>
         </div>
-        <div class="total"><div class="pts num">60</div><div class="of">/ 100</div></div>
+        <div class="total"><div class="pts num">25</div><div class="of">/ 100</div></div>
       </div>
       <!-- 2 -->
-      <div class="row lead">
-        <div class="rank g2">2</div>
-        <div class="who"><div class="nm">Rachel Mansano<span class="qual">Mendoza</span></div>
-          <div class="meta">1 reativação · 0 vendas com experiência · 8 vendas no período · 0% de vendas com experiência</div></div>
+      <div class="row">
+        <div class="rank">2</div>
+        <div class="who"><div class="nm">Evelyn Velho</div>
+          <div class="meta">0 reativações · 0 vendas com experiência · 3 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
-          <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:100%"></i></div></div>
+          <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot p"></span><div class="bar p"><i style="--w:0%"></i></div></div>
         </div>
-        <div class="total"><div class="pts num">35</div><div class="of">/ 100</div></div>
+        <div class="total"><div class="pts num">0</div><div class="of">/ 100</div></div>
       </div>
       <!-- 3 -->
       <div class="row">
-        <div class="rank g3">3</div>
-        <div class="who"><div class="nm">Evelyn Velho</div>
-          <div class="meta">0 reativações · 0 vendas com experiência · 3 vendas no período · 0% de vendas com experiência</div></div>
+        <div class="rank">3</div>
+        <div class="who"><div class="nm">Joana Prada</div>
+          <div class="meta">0 reativações · 0 vendas com experiência · 5 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
           <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:0%"></i></div></div>
@@ -376,7 +378,7 @@
       <!-- 4 -->
       <div class="row">
         <div class="rank">4</div>
-        <div class="who"><div class="nm">Joana Prada</div>
+        <div class="who"><div class="nm">Luciana Gasparin</div>
           <div class="meta">0 reativações · 0 vendas com experiência · 5 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
           <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
@@ -388,8 +390,8 @@
       <!-- 5 -->
       <div class="row">
         <div class="rank">5</div>
-        <div class="who"><div class="nm">Luciana Gasparin</div>
-          <div class="meta">0 reativações · 0 vendas com experiência · 5 vendas no período · 0% de vendas com experiência</div></div>
+        <div class="who"><div class="nm">Nathalia Cantarelle</div>
+          <div class="meta">0 reativações · 0 vendas com experiência · 2 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
           <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:0%"></i></div></div>
@@ -400,8 +402,8 @@
       <!-- 6 -->
       <div class="row">
         <div class="rank">6</div>
-        <div class="who"><div class="nm">Nathalia Cantarelle</div>
-          <div class="meta">0 reativações · 0 vendas com experiência · 2 vendas no período · 0% de vendas com experiência</div></div>
+        <div class="who"><div class="nm">Nathália Coimbra</div>
+          <div class="meta">0 reativações · 0 vendas com experiência · 0 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
           <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:0%"></i></div></div>
@@ -412,8 +414,8 @@
       <!-- 7 -->
       <div class="row">
         <div class="rank">7</div>
-        <div class="who"><div class="nm">Nathália Coimbra</div>
-          <div class="meta">0 reativações · 0 vendas com experiência · 0 vendas no período · 0% de vendas com experiência</div></div>
+        <div class="who"><div class="nm">Rachel Mansano</div>
+          <div class="meta">0 reativações · 0 vendas com experiência · 8 vendas no período · 0% de vendas com experiência</div></div>
         <div class="crits">
           <div class="crit"><span class="dot r"></span><div class="bar r"><i style="--w:0%"></i></div></div>
           <div class="crit"><span class="dot n"></span><div class="bar n"><i style="--w:0%"></i></div></div>
@@ -441,7 +443,7 @@
         <div class="tag">Peso 35</div>
         <h3>Reativação de clientes</h3>
         <div class="desc">Reconquistar um cliente que viajou com a gente até 2025 e ainda não voltou em 2026 — vale quando ele fecha ao menos 2 noites de hotel Klas no período.</div>
-        <div class="lead-line">Na frente: <b>Isabela</b> e <b>Rachel</b>, com 1 reativação cada.</div>
+        <div class="lead-line"><b>Ainda 0</b></div>
       </div>
       <div class="cc n">
         <span class="wt num">25</span>
@@ -454,8 +456,8 @@
         <span class="wt num">40</span>
         <div class="tag">Peso 40 · maior peso</div>
         <h3>% de vendas com experiência</h3>
-        <div class="desc">De todas as viagens fechadas <i>por inteiro</i> no período, quantas saíram com uma experiência junto.</div>
-        <div class="lead-line"><b>Ainda 0%</b> para todas — o critério que ninguém abriu ainda.</div>
+        <div class="desc">De todas as viagens fechadas <i>por inteiro</i> no período, quantas saíram com uma experiência junto. É aqui que a campanha se decide.</div>
+        <div class="lead-line"><b>Ainda 0%</b></div>
       </div>
     </div>
   </section>
